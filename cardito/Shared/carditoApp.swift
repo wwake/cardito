@@ -11,7 +11,7 @@ import SwiftUI
 struct carditoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ContentView(decks: [Deck("a"), Deck("b")])
         }
     }
 }

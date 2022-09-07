@@ -7,15 +7,52 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+class Deck: ObservableObject, Identifiable {
+  let id = UUID()
+  @Published var title: String
+  @Published var cards: [String] = ["c1", "c2", "c3"]
+  init(_ title: String) {
+    self.title = title
+  }
+}
+
+struct DeckView : View {
+  var deck: Deck!
+
+  var body: some View {
+    Text(deck.title)
+    ForEach(deck.cards, id:\.self) {
+      Text($0)
     }
+  }
+}
+
+struct ContentView: View {
+  var decks : [Deck]
+
+  var body: some View {
+   // NavigationView {
+      VStack {
+        List {
+          ForEach(decks) {deck in
+            Text(deck.title)
+//            NavigationLink(destination: DeckView(deck: deck)) {
+//              Text("Deck \(deck.title)!")
+//                .padding()
+//            }
+          }
+        }
+     //   .navigationTitle("Decked")
+
+          .listStyle(.bordered(alternatesRowBackgrounds: true))
+          .frame(width: 500, height: 300)
+      }
+//    }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView(decks: [Deck("pa"), Deck("pb")])
+  }
 }
