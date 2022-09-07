@@ -49,6 +49,7 @@
 		912DFC8A28C842E900479EAB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		912DFC8E28C842E900479EAB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		912DFC9028C842E900479EAB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		912DFCA628C845E200479EAB /* Cardito.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cardito.key; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		912DFC6428C842E700479EAB = {
 			isa = PBXGroup;
 			children = (
+				912DFCA628C845E200479EAB /* Cardito.key */,
 				912DFC6928C842E700479EAB /* Shared */,
 				912DFC7828C842E900479EAB /* macOS */,
 				912DFC8128C842E900479EAB /* Tests iOS */,
