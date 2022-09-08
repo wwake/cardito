@@ -7,29 +7,6 @@
 
 import SwiftUI
 
-class Card : ObservableObject, Identifiable {
-  let id = UUID()
-
-  @Published var headline: [String]
-  @Published var body: [String] = []
-
-  init(headline: [String], body: [String]) {
-    self.headline = headline
-    self.body = body
-  }
-}
-
-class Deck: ObservableObject, Identifiable {
-  let id = UUID()
-
-  @Published var title: String
-  @Published var cards: [String] = ["c1", "c2", "c3"]
-
-  init(_ title: String) {
-    self.title = title
-  }
-}
-
 struct CardView: View {
   var card: Card
 
