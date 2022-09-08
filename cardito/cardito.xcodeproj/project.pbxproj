@@ -157,8 +157,8 @@
 		91382C9028CA63E800040E21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				91382C9228CA642700040E21 /* Card.swift */,
 				91382C9428CA643600040E21 /* Deck.swift */,
+				91382C9228CA642700040E21 /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,8 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				912DFC6B28C842E700479EAB /* AllDecksView.swift */,
-				91382C9628CA650400040E21 /* CardView.swift */,
 				91382C9828CA652100040E21 /* DeckView.swift */,
+				91382C9628CA650400040E21 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

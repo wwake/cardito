@@ -13,7 +13,7 @@ class Card : ObservableObject, Identifiable {
   @Published var headline: [String]
   @Published var body: [String] = []
 
-  init(headline: [String], body: [String]) {
+  init(_ headline: [String], _ body: [String]) {
     self.headline = headline
     self.body = body
   }

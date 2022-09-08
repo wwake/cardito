@@ -12,10 +12,23 @@ struct DeckView : View {
   var deck: Deck!
 
   var body: some View {
-    Text(deck.title)
-    List(deck.cards, id:\.self) {
-      Text($0)
+    NavigationView {
+      VStack {
+        List(deck.cards) { card in
+          NavigationLink(destination: CardView(card: card)) {
+            ForEach(card.headline, id:\.self) {
+              Text($0)
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+          }
+        }
+        .navigationBarTitle(deck.title)
+
+        .listStyle(.plain)
+      }
+      Text("No deck selected")
+        .font(.headline)
     }
-    .listStyle(.plain)
   }
 }

@@ -18,7 +18,6 @@ struct CardView: View {
           Text($0)
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
-
         }
       }
       .padding(16)
@@ -38,9 +37,8 @@ struct CardView: View {
 }
 
 struct CardView_Previews: PreviewProvider {
-
   static var previews: some View {
-    CardView(card: Card(headline: ["h1 very long needs to be trimmed", "h2"], body:["b1", "b2", "b3", "b4", "b5"]))
+    CardView(card: Card(["h1 very long needs to be trimmed", "h2"], ["b1", "b2", "b3", "b4", "b5"]))
       .previewInterfaceOrientation(.landscapeLeft)
   }
 }

@@ -11,9 +11,10 @@ class Deck: ObservableObject, Identifiable {
   let id = UUID()
 
   @Published var title: String
-  @Published var cards: [String] = ["c1", "c2", "c3"]
+  @Published var cards: [Card]
 
-  init(_ title: String) {
+  init(_ title: String, _ cards: [Card] = []) {
     self.title = title
+    self.cards = cards
   }
 }
