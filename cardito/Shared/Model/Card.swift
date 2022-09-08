@@ -6,15 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Card : ObservableObject, Identifiable {
   let id = UUID()
 
   @Published var headline: [String]
-  @Published var body: [String] = []
+  @Published var body: [String]
+  @Published var color: Color
 
-  init(_ headline: [String], _ body: [String]) {
+  init(_ headline: [String], _ body: [String], _ color : Color = Color.white) {
     self.headline = headline
     self.body = body
+    self.color = color
   }
 }

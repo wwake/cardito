@@ -33,6 +33,8 @@ struct CardView: View {
       .listStyle(.plain)
       Spacer()
     }
+    .background(card.color)
+    .foregroundColor(card.color == Color.black ? Color.white : Color.black)
   }
 }
 
