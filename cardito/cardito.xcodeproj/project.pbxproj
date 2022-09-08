@@ -13,8 +13,8 @@
 		912DFC9128C842E900479EAB /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC9028C842E900479EAB /* Tests_macOSLaunchTests.swift */; };
 		912DFC9228C842E900479EAB /* carditoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC6A28C842E700479EAB /* carditoApp.swift */; };
 		912DFC9328C842E900479EAB /* carditoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC6A28C842E700479EAB /* carditoApp.swift */; };
-		912DFC9428C842E900479EAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC6B28C842E700479EAB /* ContentView.swift */; };
-		912DFC9528C842E900479EAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC6B28C842E700479EAB /* ContentView.swift */; };
+		912DFC9428C842E900479EAB /* AllDecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC6B28C842E700479EAB /* AllDecksView.swift */; };
+		912DFC9528C842E900479EAB /* AllDecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DFC6B28C842E700479EAB /* AllDecksView.swift */; };
 		912DFC9628C842E900479EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912DFC6C28C842E900479EAB /* Assets.xcassets */; };
 		912DFC9728C842E900479EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912DFC6C28C842E900479EAB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		912DFC6A28C842E700479EAB /* carditoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carditoApp.swift; sourceTree = "<group>"; };
-		912DFC6B28C842E700479EAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		912DFC6B28C842E700479EAB /* AllDecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDecksView.swift; sourceTree = "<group>"; };
 		912DFC6C28C842E900479EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		912DFC7128C842E900479EAB /* cardito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912DFC7728C842E900479EAB /* cardito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardito.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				912DFC6A28C842E700479EAB /* carditoApp.swift */,
-				912DFC6B28C842E700479EAB /* ContentView.swift */,
+				912DFC6B28C842E700479EAB /* AllDecksView.swift */,
 				912DFC6C28C842E900479EAB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -303,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				912DFC9428C842E900479EAB /* ContentView.swift in Sources */,
+				912DFC9428C842E900479EAB /* AllDecksView.swift in Sources */,
 				912DFC9228C842E900479EAB /* carditoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				912DFC9528C842E900479EAB /* ContentView.swift in Sources */,
+				912DFC9528C842E900479EAB /* AllDecksView.swift in Sources */,
 				912DFC9328C842E900479EAB /* carditoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

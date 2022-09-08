@@ -7,10 +7,19 @@
 
 import SwiftUI
 
+class Card : ObservableObject, Identifiable {
+  let id = UUID()
+
+  @Published var headline: [String] = []
+  @Published var body: [String] = []
+}
+
 class Deck: ObservableObject, Identifiable {
   let id = UUID()
+
   @Published var title: String
   @Published var cards: [String] = ["c1", "c2", "c3"]
+
   init(_ title: String) {
     self.title = title
   }
@@ -18,24 +27,19 @@ class Deck: ObservableObject, Identifiable {
 
 struct DeckView : View {
   var deck: Deck!
-  
+
   var body: some View {
     Text(deck.title)
-    ForEach(deck.cards, id:\.self) {
+    List(deck.cards, id:\.self) {
       Text($0)
     }
+    .listStyle(.plain)
   }
 }
 
-struct DetailView: View {
-  var body: some View {
-    Text("detailed")
-  }
-}
-
-struct ContentView: View {
+struct AllDecksView: View {
   var decks : [Deck]
-  
+
   var body: some View {
     NavigationView {
       List {
@@ -46,16 +50,17 @@ struct ContentView: View {
           .navigationBarTitle("Decks")
         }
       }
-      
+      .listStyle(.plain)
+
       Text("No deck selected")
         .font(.headline)
-      
+
     }
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AllDecksView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(decks: [Deck("pa"), Deck("pb")])
+    AllDecksView(decks: [Deck("pa"), Deck("pb")])
   }
 }
