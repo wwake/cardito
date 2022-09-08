@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AllDecksView.swift
 //  Shared
 //
 //  Created by Bill Wake on 9/6/22.
@@ -31,6 +31,6 @@ struct AllDecksView: View {
 
 struct AllDecksView_Previews: PreviewProvider {
   static var previews: some View {
-    AllDecksView(decks: [Deck("pa"), Deck("pb")])
+    AllDecksView(decks: [Deck("pa", [], DeckTemplate(headlineFields: [], bodyFields: [])), Deck("pb", [], DeckTemplate(headlineFields: [], bodyFields: []))])
   }
 }

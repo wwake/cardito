@@ -10,27 +10,38 @@ import SwiftUI
 
 struct DeckView : View {
   var deck: Deck!
-
+  
   var body: some View {
     NavigationView {
       VStack {
         List(deck.cards) { card in
-          NavigationLink(destination: CardView(card: card)) {
-            ForEach(card.headline, id:\.self) {
-              Text($0)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
+          Section {
+            NavigationLink(destination: CardView(card: card)) {
+              ForEach(card.headline, id:\.self) {
+                Text($0)
+                  .padding()
+                  .frame(maxWidth: .infinity, alignment: .leading)
+              }
             }
+            .background(card.color.asColor())
+            .foregroundColor(card.color == Colors.black ? Color.white : Color.black)
+          } header: {
+            HStack {
+              ForEach(deck.template.headlineFields, id:\.self) {
+                Text($0)
+                  .padding()
+                  .frame(maxWidth: .infinity, alignment: .leading)
+              }
+            }
+            .background(Color.black)
+            .foregroundColor(Color.white)
           }
-          .background(card.color.asColor())
-          .foregroundColor(card.color == Colors.black ? Color.white : Color.black)
-
         }
         .navigationBarTitle(deck.title)
-
         .listStyle(.plain)
       }
-      Text("No deck selected")
+      
+      Text("No card selected")
         .font(.headline)
     }
   }

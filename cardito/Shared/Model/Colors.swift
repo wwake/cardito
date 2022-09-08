@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-private let light = 0.125
 private let heavy = 224/255.0
 private let full = 1.0
 
