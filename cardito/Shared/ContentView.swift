@@ -18,7 +18,7 @@ class Deck: ObservableObject, Identifiable {
 
 struct DeckView : View {
   var deck: Deck!
-
+  
   var body: some View {
     Text(deck.title)
     ForEach(deck.cards, id:\.self) {
@@ -27,27 +27,30 @@ struct DeckView : View {
   }
 }
 
+struct DetailView: View {
+  var body: some View {
+    Text("detailed")
+  }
+}
+
 struct ContentView: View {
   var decks : [Deck]
-
+  
   var body: some View {
-   // NavigationView {
-      VStack {
-        List {
-          ForEach(decks) {deck in
+    NavigationView {
+      List {
+        ForEach(decks) { deck in
+          NavigationLink(destination: DeckView(deck: deck)) {
             Text(deck.title)
-//            NavigationLink(destination: DeckView(deck: deck)) {
-//              Text("Deck \(deck.title)!")
-//                .padding()
-//            }
           }
+          .navigationBarTitle("Decks")
         }
-     //   .navigationTitle("Decked")
-
-          .listStyle(.bordered(alternatesRowBackgrounds: true))
-          .frame(width: 500, height: 300)
       }
-//    }
+      
+      Text("No deck selected")
+        .font(.headline)
+      
+    }
   }
 }
 
