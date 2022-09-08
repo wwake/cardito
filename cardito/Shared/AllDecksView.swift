@@ -10,8 +10,13 @@ import SwiftUI
 class Card : ObservableObject, Identifiable {
   let id = UUID()
 
-  @Published var headline: [String] = []
+  @Published var headline: [String]
   @Published var body: [String] = []
+
+  init(headline: [String], body: [String]) {
+    self.headline = headline
+    self.body = body
+  }
 }
 
 class Deck: ObservableObject, Identifiable {
@@ -22,6 +27,40 @@ class Deck: ObservableObject, Identifiable {
 
   init(_ title: String) {
     self.title = title
+  }
+}
+
+struct CardView: View {
+  var card: Card
+
+  var body: some View {
+    VStack {
+      HStack {
+        ForEach(card.headline, id:\.self) {
+          Text($0)
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+        }
+      }
+
+      VStack {
+        ForEach(card.body, id:\.self) {
+          Text($0)
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+          Spacer()
+        }
+      }
+      Spacer()
+    }
+    .padding()
+  }
+}
+
+struct CardView_Previews: PreviewProvider {
+
+  static var previews: some View {
+    CardView(card: Card(headline: ["h1", "h2"], body:["b1", "b2", "b3", "b4", "b5"]))
   }
 }
 
