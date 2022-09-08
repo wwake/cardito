@@ -22,6 +22,9 @@ struct DeckView : View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
           }
+          .background(card.color.asColor())
+          .foregroundColor(card.color == Colors.black ? Color.white : Color.black)
+
         }
         .navigationBarTitle(deck.title)
 

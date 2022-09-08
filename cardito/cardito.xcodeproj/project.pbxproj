@@ -21,6 +21,7 @@
 		91382C9528CA643600040E21 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9428CA643600040E21 /* Deck.swift */; };
 		91382C9728CA650400040E21 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9628CA650400040E21 /* CardView.swift */; };
 		91382C9928CA652100040E21 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9828CA652100040E21 /* DeckView.swift */; };
+		91382C9B28CA711200040E21 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9A28CA711200040E21 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		91382C9428CA643600040E21 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		91382C9628CA650400040E21 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		91382C9828CA652100040E21 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		91382C9A28CA711200040E21 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				91382C9428CA643600040E21 /* Deck.swift */,
 				91382C9228CA642700040E21 /* Card.swift */,
+				91382C9A28CA711200040E21 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				91382C9528CA643600040E21 /* Deck.swift in Sources */,
 				912DFC9428C842E900479EAB /* AllDecksView.swift in Sources */,
 				91382C9328CA642700040E21 /* Card.swift in Sources */,
+				91382C9B28CA711200040E21 /* Colors.swift in Sources */,
 				912DFC9228C842E900479EAB /* carditoApp.swift in Sources */,
 				91382C9728CA650400040E21 /* CardView.swift in Sources */,
 				91382C9928CA652100040E21 /* DeckView.swift in Sources */,

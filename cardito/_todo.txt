@@ -1,1 +1,10 @@
+* Adding color to Cards and title view
+
+CARD-02: Sept. 8, 2022
+* Fix deck view with navigation
+* Create card view
+* Put model & view classes in separate files in separate groups
+
+CARD-01: Sept 7, 2022
 * Show decks
+

@@ -13,9 +13,9 @@ class Card : ObservableObject, Identifiable {
 
   @Published var headline: [String]
   @Published var body: [String]
-  @Published var color: Color
+  @Published var color: Colors
 
-  init(_ headline: [String], _ body: [String], _ color : Color = Color.white) {
+  init(_ headline: [String], _ body: [String], _ color : Colors = Colors.white) {
     self.headline = headline
     self.body = body
     self.color = color
