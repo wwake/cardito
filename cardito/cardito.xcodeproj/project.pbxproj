@@ -19,6 +19,8 @@
 		912DFC9728C842E900479EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912DFC6C28C842E900479EAB /* Assets.xcassets */; };
 		91382C9328CA642700040E21 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9228CA642700040E21 /* Card.swift */; };
 		91382C9528CA643600040E21 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9428CA643600040E21 /* Deck.swift */; };
+		91382C9728CA650400040E21 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9628CA650400040E21 /* CardView.swift */; };
+		91382C9928CA652100040E21 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91382C9828CA652100040E21 /* DeckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		912DFCA928C91AEE00479EAB /* _todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = _todo.txt; sourceTree = "<group>"; };
 		91382C9228CA642700040E21 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		91382C9428CA643600040E21 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		91382C9628CA650400040E21 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		91382C9828CA652100040E21 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				912DFC6B28C842E700479EAB /* AllDecksView.swift */,
+				91382C9628CA650400040E21 /* CardView.swift */,
+				91382C9828CA652100040E21 /* DeckView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +335,8 @@
 				912DFC9428C842E900479EAB /* AllDecksView.swift in Sources */,
 				91382C9328CA642700040E21 /* Card.swift in Sources */,
 				912DFC9228C842E900479EAB /* carditoApp.swift in Sources */,
+				91382C9728CA650400040E21 /* CardView.swift in Sources */,
+				91382C9928CA652100040E21 /* DeckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
